@@ -35,3 +35,37 @@ code {
     padding: 60px 20px;
   }
 }
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+
+  &:focus {
+    border-color: #dbdbdb;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 37px;
+  background: #4dd599;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($color: #4dd599, $amount: 8%);
+  }
+  &:active {
+    background: darken($color: #4dd599, $amount: 10%);
+  }
+}
