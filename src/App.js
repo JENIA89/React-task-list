@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AddList from "./Components/AddLis/AddList";
 import List from "./Components/List/List";
 import DB from "./assets/db.json";
+import Tasks from "./Components/Tasks/Taskst";
 
 function App() {
   const [list, setList] = useState(
@@ -42,7 +43,9 @@ function App() {
         <List items={list} onRemove={(item) => console.log(item)} isRemovable />
         <AddList onAdd={onAddList} colors={DB.colors} />
       </div>
-      <div className="todo__tasts"></div>
+      <div className="todo__tasks">
+        <Tasks />
+      </div>
     </div>
   );
 }
